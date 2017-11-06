@@ -33,15 +33,15 @@ for (var i = 0; i < data.length; i++){
 var userYear = document.getElementById("userYear").value;
 
 $('#in-state-btn').change(function(){
-  $('#baby').html(tuitionByYearDict[userYear][0]);
-  $('#baby-mama').html(tuitionByYearDict[userYear - 25][0]);
-  $('#baby-mas').html(tuitionByYearDict[userYear - 50][0]);
+  $('#your-tuition').html(tuitionByYearDict[userYear][0]);
+  $('#parents-tuition').html(tuitionByYearDict[userYear - 25][0]);
+  $('#gparents-tuition').html(tuitionByYearDict[userYear - 50][0]);
 });
 
 $('#out-state-btn').change(function(){
-  $('#baby').html(tuitionByYearDict[userYear][1]);
-  $('#baby-mama').html(tuitionByYearDict[userYear - 25][1]);
-  $('#baby-mas').html(tuitionByYearDict[userYear - 50][1]);
+  $('#your-tuition').html(tuitionByYearDict[userYear][1]);
+  $('#parents-tuition').html(tuitionByYearDict[userYear - 25][1]);
+  $('#gparents-tuition').html(tuitionByYearDict[userYear - 50][1]);
 });
 
 
