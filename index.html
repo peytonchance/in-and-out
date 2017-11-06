@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>MJ487 Project 3</title>
   <meta name="description" content="MJ487 Project 3">
   <meta name="author" content="SitePoint">
+
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
@@ -20,20 +20,21 @@
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
+
 </head>
 
 <body>
 
 <div class="container-fluid custom-header">
   <div class="row">
-    <div class="col-3">
+    <div class="col-2 col-md-3">
       <img src="img/mobile-nav.png" alt="Mobile navigation icon" id="hamburger-nav"/>
     </div>
-    <div class="col-6 text-center">
-      <a href="https://washingtonpost.com" target="_blank"><img src="img/wapo-logo-white.png" alt="Washington Post Logo in white."></a>
+    <div class="col-8 col-md-6 text-center">
+      <a href="https://washingtonpost.com" target="_blank"><img src="img/wapo-logo-white.png" alt="Washington Post Logo in white." id="wapo-logo"></a>
       <p id="custom-header-tag">Democracy Dies in Darkness</p>
     </div>
-    <div class="col-3">
+    <div class="col-2 col-md-3">
     </div>
   </div>
 </div>
@@ -97,7 +98,7 @@
   <div class="row tuition-intro">
     <div class="col-6">
       <input type="number" placeholder="Your Graduation Year" id="userYear"></input>
-      <input type="submit" onclick="loadData();" />
+      <input type="submit" onclick="loadData();" id="submit-btn"></input>
     </div>
     <div class="col-6">
       In-State <input type='radio' id='in-state-btn' name='type' value='1' />
@@ -106,19 +107,19 @@
 
   </div>
   <div class="row tuition-history">
-    <div class="col-4">
+    <div class="col-12 col-sm-4">
       <div id="your-tuition">
 
       </div>
       <p>You</p>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-sm-4">
       <div id="parents-tuition">
 
       </div>
       <p>Your Parents</p>
     </div>
-    <div class="col-4">
+    <div class="col-12 col-sm-4">
       <div id="gparents-tuition">
 
       </div>
