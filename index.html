@@ -8,8 +8,14 @@
   <meta name="description" content="MJ487 Project 3">
   <meta name="author" content="SitePoint">
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link rel="stylesheet" href="//cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-  <link rel="stylesheet" href="styles.css?v=1.0">
+  <link href="css/c3.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/styles.css">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,23 +23,87 @@
 </head>
 
 <body>
-  <table id="example" class="display" cellspacing="0" width="100%">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Total Salary</th>
-                <th>State Salary</th>
-                <th>Age</th>
-                <th>Months of State Service</th>
-                <th>Years of State Service</th>
-                <th>Non-State Salary</th>
-                <th>Department</th>
-            </tr>
-        </thead>
-    </table>
+
+<div class="container-fluid custom-header">
+  <div class="row">
+    <div class="col-3">
+      <img src="img/mobile-nav.png" alt="Mobile navigation icon" id="hamburger-nav"/>
+    </div>
+    <div class="col-6 text-center">
+      <a href="https://washingtonpost.com" target="_blank"><img src="img/wapo-logo-white.png" alt="Washington Post Logo in white."></a>
+      <p id="custom-header-tag">Democracy Dies in Darkness</p>
+    </div>
+    <div class="col-3">
+    </div>
+  </div>
+</div>
+
+<div class="container title">
+  <div class="row">
+    <div class="col-12">
+      <h1>The Ins & Outs of The Public Ivies</h1>
+      <p>How America’s top public universities fill their classrooms and meet their bottom lines with out-of-state enrollment<p>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 text">
+      <h2>Where are you from, exactly?</h2>
+      <p>In 1986 the University of North Carolina Board of Governors created policy 700.1.3 which limited out-of-state enrollment at UNC system schools to 18% of the incoming first-year class.  This percentage is much lower than UNC’s peers. The bar graph below shows the undergraduate student population of three top public universities based on students’ geographical origin.</p>
+    </div>
+  </div>
+
+  <!-- Stacked Bar Graph -->
+  <div class="row">
+    <div id="inOutStackedBar">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12 text">
+      <p> Out-of-state students make up nearly double the proportion of total enrollment at U-Va. as they do at UNC-Chapel Hill. Without the restriction of the quotas, the University of Virginia’s undergraduate student body is roughly 30% out-of-state. These students paid $45,276 each in tuition in fees in the 2016-2017 school year - a pretty penny for a top-tier public education far from home.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2>Tuition revenue paints a nuanced portrait of admission trends at the Public Ivies</h2>
+      <p>It comes as no surprise that out-of-state students at public universities pay more in tuition and fees than their in-state peers. How this well-known disparity impacts total revenue, however, paints a more nuanced picture of university finances in 2017. At UNC-Chapel Hill, out-of-state students make up 18-19% of the student body. Their contributions to total tuition revenue, however, was 46%. Less than one-fifth of the UNC-Chapel Hill student body generates nearly half of the tuition revenue. This proportion has fluctuated between 46% and 50% since 2000.</p>
+      <p>The charts below show the evolution of out-of-state enrollment at UNC-Chapel Hill, U-Va. and UC-Berkeley from 2005 to 2017.</p>
+    </div>
+    <div id="enrollmentLine">
+    </div>
+    <div id="revenueLine">
+    </div>
+
+  </div>
+  <div class="row">
+    <div class="col-12 text">
+      <p>In 2005, only 9% of the UC-Berkeley undergraduate student body was from out of state. By 2016, that proportion had reached 24%. The enrollment shift allowed UC-Berkeley to meet its peers in generating roughly half of all tuition revenue from out-of-state students. The University of Virginia has consistently generated more of its tuition from out-of-state students than UNC-Chapel Hill and UC-Berkeley, with 55% of its  $673 million tuition revenue coming from outside Virginia’s borders.</p>
+      <p>A 2016 article in The Daily Tar Heel quoted a representative of the Campaign for College Opportunity as saying “The reason why they’re doing it is because of inconsistent state funding. They’re going to try to enroll more out-of-state students to pay for in-state students.” This trend, the article explains, came in the wake of the 2008 recession.</p>
+      <p>The trend of enrolling out-of-state students helps generate much-needed revenue as state legislatures across the country have reduced their education spending. Many state residents argue that this tactic defies the mission behind public universities, which are, in theory, designed to be of and for the people of their state.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-12">
+      <h2>Not Your Parents' Tuition</h2>
+      <p>Since 1947, tuition at the UNC-Chapel Hill has risen exponentially. An out-of-state student paid just $244 for the 1947-1955 school year. In 2016-2017 that same student would be required to pay $33,916 for the same education. Even adjusting for inflation, the 2017 tuition is 13 times more than its 1947 counterpart.</p>
+      <p>The tool below allows you to calculate how much you, your parents and your grandparents would have paid to attend UNC-Chapel Hill. The tool assumes a generational gap of 25 years and does not account for inflation.</p>
+    </div>
+  </div>
+
+</div>
+
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="js/c3.min.js"></script>
     <script src="//cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script src="js/scripts.js"></script>
  </body>

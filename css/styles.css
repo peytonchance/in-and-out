@@ -1,0 +1,51 @@
+/* ----- Global Styles ----*/
+
+body{
+  font-family: 'Georgia';
+  font-size: 18px;
+}
+
+h1{
+  font-weight: 700;
+}
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 3%;
+}
+.container{
+  padding: 0% 15%;
+}
+.text{
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+
+/* ----- Header ----*/
+
+.custom-header{
+background-color: black;
+padding-top: 1%;
+}
+
+#custom-header-tag{
+  color: #fff;
+  font-style: italic;
+  text-align: center;
+}
+
+#hamburger-nav{
+  margin-top: 25px;
+  max-height: 30px;
+}
+
+.title{
+  margin-top: 5%;
+}
+
+/*----- Revenue Graph ----*/
+#revenueLine{
+  margin-top: 5%;
+}
