@@ -1,58 +1,53 @@
 var data;
 
 
+
 function loadData(){
   $.ajax({
     type: "GET",
     url: "data/tuition.json",
-    dataType: "text",
+    dataType: "json",
     success: parseData
   });
 }
 
 function parseData(data){
-var tuitionByYearDict = {};
 var tuitionYear, inState, outState;
+var tuitionByYearDict = {};
 
-for (var arg = 1; arg < arguments.length; arg++){
-  for (var i = 0; i < arguments[arg].length; i++){
-    tuitionYear = arguments[arg][i].Year;
-    inState = arguments[arg][i].In;
-    outState = arguments[arg][i].Out;
-
+for (var i = 0; i < data.length; i++){
+    tuitionYear = data[i].Year;
+    inState = data[i].In;
+    outState = data[i].Out;
     tuitionYear = tuitionYear.toString();
 
+
     if(tuitionByYearDict[tuitionYear] == undefined){
-      tuitionByYearDict[tuitionYear] = [inState + outState];
+      tuitionByYearDict[tuitionYear] = [inState, outState];
     } else{
-      tuitionByYearDict[tuitionYear].push(inState + outState);
+      tuitionByYearDict[tuitionYear].push(inState, outState);
     }
-  }
-}
-document.body.innerHTML = JSON.stringify(tuitionByYearDict);
-
 }
 
-function showTuition(){
-  // var userYear = document.getElementById("userYear").value;
-  loadData();
+//// Get user input and work the magic
+var userYear = document.getElementById("userYear").value;
+
+$('#in-state-btn').change(function(){
+  $('#baby').html(tuitionByYearDict[userYear][0]);
+  $('#baby-mama').html(tuitionByYearDict[userYear - 25][0]);
+  $('#baby-mas').html(tuitionByYearDict[userYear - 50][0]);
+});
+
+$('#out-state-btn').change(function(){
+  $('#baby').html(tuitionByYearDict[userYear][1]);
+  $('#baby-mama').html(tuitionByYearDict[userYear - 25][1]);
+  $('#baby-mas').html(tuitionByYearDict[userYear - 50][1]);
+});
 
 
-
-
-    // console.log(userYear);
-    // var json = new JsonObject(jsonStr);
-    // var checking = json.get("year");
-    // console.log(checking);
-    // console.log(tuitionInfo[userYear]);
 }
-
-
-
 
 $(document).ready(function() {
-
-  showTuition();
   var inOutStackedBar = c3.generate({
     bindto: '#inOutStackedBar',
     data: {

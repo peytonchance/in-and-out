@@ -49,3 +49,17 @@ padding-top: 1%;
 #revenueLine{
   margin-top: 5%;
 }
+
+.tuition-intro{
+  margin-bottom: 15%;
+}
+.tuition-history{
+  font-family: 'Georgia';
+  font-weight: 700;
+  font-size: 46px;
+}
+.tuition-history p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+}

@@ -94,9 +94,37 @@
       <p>The tool below allows you to calculate how much you, your parents and your grandparents would have paid to attend UNC-Chapel Hill. The tool assumes a generational gap of 25 years and does not account for inflation.</p>
     </div>
   </div>
-  <div class="row">
-    <input type="number" placeholder="Your Graduation Year" id="userYear"></input>
-    <input type="submit" onclick="showTuition();" />
+  <div class="row tuition-intro">
+    <div class="col-6">
+      <input type="number" placeholder="Your Graduation Year" id="userYear"></input>
+      <input type="submit" onclick="loadData();" />
+    </div>
+    <div class="col-6">
+      In-State <input type='radio' id='in-state-btn' name='type' value='1' />
+      Out-of-State <input type='radio' id='out-state-btn' name='type' value='2' />
+    </div>
+
+  </div>
+  <div class="row tuition-history">
+    <div class="col-4">
+      <div id="baby">
+
+      </div>
+      <p>You</p>
+    </div>
+    <div class="col-4">
+      <div id="baby-mama">
+
+      </div>
+      <p>Your Parents</p>
+    </div>
+    <div class="col-4">
+      <div id="baby-mas">
+
+      </div>
+      <p>Your Grandparents</p>
+    </div>
+
   </div>
 
 </div>
