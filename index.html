@@ -68,14 +68,19 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row first-graf">
     <div class="col-12">
       <h2>Tuition revenue paints a nuanced portrait of admission trends at the Public Ivies</h2>
       <p>It comes as no surprise that out-of-state students at public universities pay more in tuition and fees than their in-state peers. How this well-known disparity impacts total revenue, however, paints a more nuanced picture of university finances in 2017. At UNC-Chapel Hill, out-of-state students make up 18-19% of the student body. Their contributions to total tuition revenue, however, was 46%. Less than one-fifth of the UNC-Chapel Hill student body generates nearly half of the tuition revenue. This proportion has fluctuated between 46% and 50% since 2000.</p>
       <p>The charts below show the evolution of out-of-state enrollment at UNC-Chapel Hill, U-Va. and UC-Berkeley from 2005 to 2017.</p>
+      <h3>Percentage of Undergraduates from Out of State</h3>
     </div>
     <div id="enrollmentLine">
     </div>
+    <div class="col-12">
+        <h4>Percentage of Tuition Revenue Generated from Out-of-State Students</h3>
+    </div>
+
     <div id="revenueLine">
     </div>
 
@@ -88,7 +93,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row tuition-blurb">
     <div class="col-12">
       <h2>Not Your Parents' Tuition</h2>
       <p>Since 1947, tuition at the UNC-Chapel Hill has risen exponentially. An out-of-state student paid just $244 for the 1947-1955 school year. In 2016-2017 that same student would be required to pay $33,916 for the same education. Even adjusting for inflation, the 2017 tuition is 13 times more than its 1947 counterpart.</p>
@@ -96,32 +101,32 @@
     </div>
   </div>
   <div class="row tuition-intro">
-    <div class="col-6">
+    <div class="col-12 col-md-6 in-out-radio">
+      In-State <input type='radio' id='in-state-btn' name='type' value='0' />
+      Out-of-State <input type='radio' id='out-state-btn' name='type' value='1' />
+    </div>
+    <div class="col-12 col-md-6">
       <input type="number" placeholder="Your Graduation Year" id="userYear"></input>
       <input type="submit" onclick="loadData();" id="submit-btn"></input>
-    </div>
-    <div class="col-6">
-      In-State <input type='radio' id='in-state-btn' name='type' value='1' />
-      Out-of-State <input type='radio' id='out-state-btn' name='type' value='2' />
     </div>
 
   </div>
   <div class="row tuition-history">
     <div class="col-12 col-sm-4">
       <div id="your-tuition">
-
+        $
       </div>
       <p>You</p>
     </div>
     <div class="col-12 col-sm-4">
       <div id="parents-tuition">
-
+        $
       </div>
       <p>Your Parents</p>
     </div>
     <div class="col-12 col-sm-4">
       <div id="gparents-tuition">
-
+        $
       </div>
       <p>Your Grandparents</p>
     </div>
@@ -131,7 +136,50 @@
 </div>
 
 <footer>
-  <div class="container-fluid">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-3">
+        <strong>Terms of Use</strong><br>
+        Digital Products Terms of Sale<br>
+        Print Products Terms of Sale<br>
+        Terms of Service<br>
+        Privacy Policy<br>
+        Submissions and Discussion Policy<br>
+        RSS Terms of Service<br>
+        Ad Choices
+      </div>
+      <div class="col-12 col-sm-3">
+        <strong>Get Us</strong><br>
+        Home Delivery<br>
+        Digital Subscription<br>
+        Gift Subscriptions<br>
+        Mobile & Apps <br>
+        Newsletters & Alerts<br>
+        Washington Post Live<br>
+        Reprints & Permissions<br>
+        Post Store<br>
+        Photo Store<br>
+        e-Replica
+      </div>
+      <div class="col-12 col-sm-3">
+        <strong>Contact Us</strong><br>
+        Help & Contact Info<br>
+        Reader Representative<br>
+        Advertise<br>
+        News Service & Syndicate<br>
+      </div>
+      <div class="col-12 col-sm-3">
+        <strong>About Us</strong><br>
+        In the Community<br>
+        Careers<br>
+        PostPoints<br>
+        Newspaper in Education<br>
+        Digital Publishing Guidelines<br>
+        Today's Paper<br>
+        WP BrandStudio<br>
+        Events<br>
+      </div>
+    </div>
   </div>
 </footer>
 

@@ -1,0 +1,67 @@
+[
+  {
+    "UNC": "UNC-Chapel Hill",
+    "UVA": "U-Va.",
+    "Berkeley": "UC-Berkeley"
+  },
+ {
+   "UNC": ".17",
+   "UVA": ".30",
+   "Berkeley": ".09"
+ },
+ {
+   "UNC": ".18",
+   "UVA": ".33",
+   "Berkeley": ".09"
+ },
+ {
+   "UNC": ".17",
+   "UVA": ".33",
+   "Berkeley": ".09"
+ },
+ {
+   "UNC": ".17",
+   "UVA": ".33",
+   "Berkeley": ".09"
+ },
+ {
+   "UNC": ".19",
+   "UVA": ".34",
+   "Berkeley": ".10"
+ },
+ {
+   "UNC": ".19",
+   "UVA": ".34",
+   "Berkeley": ".13"
+ },
+ {
+   "UNC": ".19",
+   "UVA": ".33",
+   "Berkeley": ".17"
+ },
+ {
+   "UNC": ".19",
+   "UVA": ".34",
+   "Berkeley": ".19"
+ },
+ {
+   "UNC": ".19",
+   "UVA": ".33",
+   "Berkeley": ".23"
+ },
+ {
+   "UNC": ".19",
+   "UVA": ".33",
+   "Berkeley": ".24"
+ },
+ {
+   "UNC": ".19",
+   "UVA": ".33",
+   "Berkeley": ".24"
+ },
+ {
+   "UNC": ".18",
+   "UVA": ".30",
+   "Berkeley": ".24"
+ }
+]

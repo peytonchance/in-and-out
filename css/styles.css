@@ -1,5 +1,4 @@
 /* ----- Global Styles ----*/
-
 body{
   font-family: 'Georgia';
   font-size: 18px;
@@ -12,7 +11,18 @@ h2{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   line-height: 40px;
-  margin-bottom: 3%;
+  margin-bottom: 2%;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 3%;
+}
+h4{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
 }
 .container{
   padding: 0% 15%;
@@ -44,14 +54,33 @@ padding-top: 1%;
 .title{
   margin-top: 5%;
 }
-
-/*----- Revenue Graph ----*/
-#revenueLine{
-  margin-top: 5%;
+#wapo-logo{
+  max-width: 300px;
 }
 
+.first-graf p:last-of-type{
+  margin-bottom: 5%;
+}
+/*----- Revenue Graph ----*/
+#inOutStackedBar{
+  width: 90%;
+  min-height: 400px;
+}
+#revenueLine{
+  margin-top: 5%;
+  width: 90%;
+  min-height: 400px;
+}
+#enrollmentLine{
+  margin-bottom: 5%;
+  width: 90%;
+  min-height: 400px;
+}
+.tuition-blurb{
+  margin-bottom: 5%;
+}
 .tuition-intro{
-  margin-bottom: 15%;
+  margin-bottom: 5%;
 }
 .tuition-history{
   font-family: 'Georgia';
@@ -64,6 +93,14 @@ padding-top: 1%;
   font-weight: 300;
 }
 
+/* ---- Footer -----*/
+
+footer{
+  font-family: 'Roboto';
+  font-size: 13px;
+  margin-top: 7%;
+  padding-bottom: 5%;
+}
 
 /* ---- Media Queries ---*/
 
@@ -71,15 +108,33 @@ padding-top: 1%;
     .container{
       padding: 0% 7%;
     }
-
+    h1{
+      font-size: 30px;
+    }
+    h2{
+      font-size: 20px;
+      line-height: 30px;
+    }
+    h3{
+      font-size: 16px;
+      line-height: 20px;
+    }
     #custom-header-tag{
       font-size: 14px;
     }
-
     #wapo-logo{
       max-width: 206px;
       margin-top: 10px;
       margin-bottom: 3px;
+    }
+    #inOutStackedBar{
+      min-height: 300px;
+    }
+    #revenueLine{
+      min-height: 200px;
+    }
+    #enrollmentLine{
+      min-height: 200px;
     }
     #hamburger-nav{
       max-height: 19px;
@@ -87,6 +142,9 @@ padding-top: 1%;
     }
     .tuition-history{
       font-size: 30px;
+    }
+    .in-out-radio{
+      font-size: 13px;
     }
     #submit-btn{
       border-style: solid;

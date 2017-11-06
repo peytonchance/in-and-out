@@ -1,0 +1,22 @@
+[
+  {
+    "schoolName": "School",
+    "inStatePercent": "% In-State",
+    "outStatePercent": "% Out-of-State"
+  },
+  {
+    "schoolName": "UNC-Chapel Hill",
+    "inStatePercent": ".82",
+    "outStatePercent": ".18"
+  },
+  {
+    "schoolName": "UC-Berkeley",
+    "inStatePercent": ".76",
+    "outStatePercent": ".24"
+  },
+  {
+    "schoolName": "U-Va.",
+    "inStatePercent": ".70",
+    "outStatePercent": ".30"
+  }
+]

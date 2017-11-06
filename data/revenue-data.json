@@ -1,0 +1,80 @@
+[
+  {
+  "Year": "x",
+  "UNC": "UNC-Chapel Hill",
+  "UVA": "U-Va.",
+  "Berkeley": "UC-Berkeley"
+},
+ {
+   "Year": "2005",
+   "UNC": ".46",
+   "UVA": ".59",
+   "Berkeley": ".26"
+ },
+ {
+   "Year": "2006",
+   "UNC": ".46",
+   "UVA": ".62",
+   "Berkeley": ".25"
+ },
+ {
+   "Year": "2007",
+   "UNC": ".45",
+   "UVA": ".62",
+   "Berkeley": ".24"
+ },
+ {
+   "Year": "2008",
+   "UNC": ".47",
+   "UVA": ".61",
+   "Berkeley": ".25"
+ },
+ {
+   "Year": "2009",
+   "UNC": ".49",
+   "UVA": ".63",
+   "Berkeley": ".27"
+ },
+ {
+   "Year": "2010",
+   "UNC": ".47",
+   "UVA": ".61",
+   "Berkeley": ".29"
+ },
+ {
+   "Year": "2011",
+   "UNC": ".48",
+   "UVA": ".60",
+   "Berkeley": ".34"
+ },
+ {
+   "Year": "2012",
+   "UNC": ".47",
+   "UVA": ".61",
+   "Berkeley": ".38"
+ },
+ {
+   "Year": "2013",
+   "UNC": ".46",
+   "UVA": ".61",
+   "Berkeley": ".43"
+ },
+ {
+   "Year": "2014",
+   "UNC": ".49",
+   "UVA": ".61",
+   "Berkeley": ".44"
+ },
+ {
+   "Year": "2015",
+   "UNC": ".47",
+   "UVA": ".59",
+   "Berkeley": ".45"
+ },
+ {
+   "Year": "2016",
+   "UNC": ".46",
+   "UVA": ".55",
+   "Berkeley": ".46"
+ }
+]
