@@ -92,6 +92,12 @@ padding-top: 1%;
   font-size: 18px;
   font-weight: 300;
 }
+#in-state-btn{
+  margin-right: 15px;
+}
+#out-state-btn{
+  margin-left: 5px;
+}
 
 /* ---- Footer -----*/
 

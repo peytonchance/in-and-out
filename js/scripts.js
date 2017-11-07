@@ -159,10 +159,7 @@ function buildRevLine(){
           x: 'x',
           xFormat: '%Y',
           columns: [
-              year,
-              uncRev,
-              uvaRev,
-              ucbRev,
+              year, uncRev, uvaRev, ucbRev,
           ]
       },
       axis: {
