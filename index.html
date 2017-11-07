@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>MJ487 Project 3</title>
+  <title>The Ins & Outs of The Public Ivies - The Washington Post</title>
   <meta name="description" content="MJ487 Project 3">
   <meta name="author" content="SitePoint">
 
@@ -43,28 +43,31 @@
   <div class="row">
     <div class="col-12">
       <h1>The Ins & Outs of The Public Ivies</h1>
-      <p>How America’s top public universities fill their classrooms and meet their bottom lines with out-of-state enrollment<p>
+      <p>How America’s top public universities fill classrooms and gaps in funding with out-of-state enrollment<p>
     </div>
   </div>
 </div>
 
 <div class="container">
-  <div class="row">
-    <div class="col-12 text">
+  <div class="row intro">
+    <div class="col-12">
       <h2>Where are you from, exactly?</h2>
-      <p>In 1986 the University of North Carolina Board of Governors created policy 700.1.3 which limited out-of-state enrollment at UNC system schools to 18% of the incoming first-year class.  This percentage is much lower than UNC’s peers. The bar graph below shows the undergraduate student population of three top public universities based on students’ geographical origin.</p>
+      <p>In 1986 the University of North Carolina Board of Governors created policy 700.1.3 which limited out-of-state enrollment at UNC system schools to 18% of the incoming first-year class. Coincidentally, just one year before, Richard Moll first coined the term "Public Ivies", a group of top-tier public universities to which the University of North Carolina at Chapel Hill belongs. The capped out-of-state enrollment at UNC is much lower than at peer universities. The bar graph below shows the undergraduate student population of three top public universities based on students’ geographical origin.</p>
     </div>
   </div>
 
   <!-- Stacked Bar Graph -->
   <div class="row">
-    <div id="inOutStackedBar">
+    <div class="col-12">
+      <h3>Undergraduate Students by Residency Status at Public Ivies</h3>
+      <div id="inOutStackedBar">
+      </div>
     </div>
   </div>
 
   <div class="row">
     <div class="col-12 text">
-      <p> Out-of-state students make up nearly double the proportion of total enrollment at U-Va. as they do at UNC-Chapel Hill. Without the restriction of the quotas, the University of Virginia’s undergraduate student body is roughly 30% out-of-state. These students paid $45,276 each in tuition in fees in the 2016-2017 school year - a pretty penny for a top-tier public education far from home.</p>
+      <p> Out-of-state students make up nearly double the proportion of total enrollment at U-Va. as they do at UNC-Chapel Hill. Without the restriction of strict quotas, the University of Virginia’s undergraduate student body is roughly 30% out-of-state. These students paid $45,276 each in tuition in fees in the 2016-2017 school year - a pretty penny for a top-tier public education far from home.</p>
     </div>
   </div>
 
@@ -88,7 +91,7 @@
   <div class="row">
     <div class="col-12 text">
       <p>In 2005, only 9% of the UC-Berkeley undergraduate student body was from out of state. By 2016, that proportion had reached 24%. The enrollment shift allowed UC-Berkeley to meet its peers in generating roughly half of all tuition revenue from out-of-state students. The University of Virginia has consistently generated more of its tuition from out-of-state students than UNC-Chapel Hill and UC-Berkeley, with 55% of its  $673 million tuition revenue coming from outside Virginia’s borders.</p>
-      <p>A 2016 article in The Daily Tar Heel quoted a representative of the Campaign for College Opportunity as saying “The reason why they’re doing it is because of inconsistent state funding. They’re going to try to enroll more out-of-state students to pay for in-state students.” This trend, the article explains, came in the wake of the 2008 recession.</p>
+      <p><a href="http://www.dailytarheel.com/article/2016/02/out-of-state-enrollment-grows-out-of-north-carolina" target="_blank">A 2016 article</a> in The Daily Tar Heel quoted a representative of the Campaign for College Opportunity as saying “The reason why they’re doing it is because of inconsistent state funding. They’re going to try to enroll more out-of-state students to pay for in-state students.” This trend, the article explains, came in the wake of the 2008 recession.</p>
       <p>The trend of enrolling out-of-state students helps generate much-needed revenue as state legislatures across the country have reduced their education spending. Many state residents argue that this tactic defies the mission behind public universities, which are, in theory, designed to be of and for the people of their state.</p>
     </div>
   </div>
@@ -102,7 +105,8 @@
   </div>
   <div class="row tuition-intro">
     <div class="col-12 col-md-6 in-out-radio">
-        <h3>Select Your Residency Status</h3>
+        <h3>Select your residency status</h3>
+        <!--- Radio button reference: https://stackoverflow.com/questions/17978130/how-to-trigger-a-click-on-checked-radio-button-in-jquery-or-javascript -->
         In-State <input type='radio' id='in-state-btn' name='type' value='0' />
         Out-of-State <input type='radio' id='out-state-btn' name='type' value='1' />
 
@@ -135,10 +139,22 @@
     </div>
 
   </div>
+  <div class="row sources">
+    <div class="col-12">
+      <h2>Sources</h2>
+      <p>The UNC-Chapel Hill data for this story came from the <a href="http://www.unc.edu/oira/public/enrollment/enrollment.php" target="_blank">UNC Office of Institutional Research & Assessment</a> and <a href="http://blogs.lib.unc.edu/uarms/index.php/2017/03/annual-tuition-and-fees-at-unc-1947-2017/" target="_blank">UNC Libraries</a>. Data on tuition and enrollment at the University of California at Berkeley came from the Univeristy of California System <a href="https://www.universityofcalifornia.edu/infocenter/fall-enrollment-headcounts">Infocenter</a> and the UC-Berkeley <a href="http://registrar.berkeley.edu/tuition-fees-residency/tuition-fees/fee-schedule-archive">Office of the Registrar</a>. Data on tuition at the University of Virginia came from the <a href="http://records.ureg.virginia.edu" target="_blank">Univeristy Registrar</a> and the U-Va. <a href="http://www.virginia.edu/budget/Budget/Docs/Tuition%20cheat%20sheet%202016-17.pdf" target="_blank">Budget Office</a>. Enrollment numbers were provided by the
+        <a href="http://research.schev.edu/enrollment/E2_Report.asp" target="_blank">State Council of Higher Education for Virginia</a>. </p>
+    </div>
+  </div>
 
 </div>
 
+
+
 <footer>
+
+  <div class="container-fluid text-center footer-divider">
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-12 col-sm-3">

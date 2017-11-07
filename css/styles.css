@@ -2,6 +2,7 @@
 body{
   font-family: 'Georgia';
   font-size: 18px;
+  background-color: #F7F7F7;
 }
 
 h1{
@@ -28,8 +29,8 @@ h4{
   padding: 0% 15%;
 }
 .text{
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 
@@ -48,7 +49,8 @@ padding-top: 1%;
 
 #hamburger-nav{
   margin-top: 25px;
-  max-height: 30px;
+  max-height: 25px;
+  margin-left: 47px;
 }
 
 .title{
@@ -60,6 +62,10 @@ padding-top: 1%;
 
 .first-graf p:last-of-type{
   margin-bottom: 5%;
+}
+
+.intro{
+  margin-bottom: 3%;
 }
 /*----- Revenue Graph ----*/
 #inOutStackedBar{
@@ -98,6 +104,9 @@ padding-top: 1%;
 #out-state-btn{
   margin-left: 5px;
 }
+.sources{
+  margin-top: 5%;
+}
 
 /* ---- Footer -----*/
 
@@ -107,7 +116,14 @@ footer{
   margin-top: 7%;
   padding-bottom: 5%;
 }
-
+.footer-divider{
+  background-color: #F7F7F7;
+background-image: url(../img/footer-divider.jpg);
+background-repeat: no-repeat;
+height: 80px;
+margin-bottom: 40px;
+background-position: center;
+}
 /* ---- Media Queries ---*/
 
 @media only screen and (max-width: 700px) {
@@ -134,7 +150,7 @@ footer{
       margin-bottom: 3px;
     }
     #inOutStackedBar{
-      min-height: 300px;
+      min-height: 240px;
     }
     #revenueLine{
       min-height: 200px;
@@ -150,7 +166,8 @@ footer{
       font-size: 30px;
     }
     .in-out-radio{
-      font-size: 13px;
+      font-size: 20px;
+      margin-bottom: 15px;
     }
     #submit-btn{
       border-style: solid;

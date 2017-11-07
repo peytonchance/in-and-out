@@ -137,7 +137,6 @@ function loadRevLineData(){
     dataType: "json",
     success: parseRevData
   });
-  console.log("test");
 }
 
 function parseRevData(revenueData){
@@ -147,9 +146,8 @@ function parseRevData(revenueData){
     uncRev.push(revenueData[i]["UNC"]);
     ucbRev.push(revenueData[i]["UVA"]);
     uvaRev.push(revenueData[i]["Berkeley"]);
-    console.log("test");
+
   }
-  // console.log(uncRev);
   buildRevLine();
 }
 function buildRevLine(){
@@ -183,7 +181,8 @@ function buildRevLine(){
 }
 
 
-// Tuition Finder functions
+// Tuition Finder functions - modeled from the wonderful Maegan Clawges' work on America Heard
+// found here: https://github.com/mclawges22/AmericanHeard/blob/master/public/83746274/javascript/zip_code_maker.js
 
 function loadData(){
   $.ajax({
@@ -211,11 +210,10 @@ for (var i = 0; i < data.length; i++){
       tuitionByYearDict[tuitionYear].push(inState, outState);
     }
 }
-console.log(tuitionByYearDict);
+
 
 //// Get user input and work the magic
 var userYear = document.getElementById("userYear").value;
-console.log(document.getElementById("in-state-btn").checked);
 
 var tempBtn = document.getElementById("in-state-btn").checked
 
