@@ -140,7 +140,6 @@ function loadRevLineData(){
 }
 
 function parseRevData(revenueData){
-  console.log("test 2");
   for (var i=0; i < revenueData.length; i++){
     year.push(revenueData[i]["Year"]);
     uncRev.push(revenueData[i]["UNC"]);
@@ -217,24 +216,36 @@ var userYear = document.getElementById("userYear").value;
 
 var tempBtn = document.getElementById("in-state-btn").checked
 
-if (tempBtn == true){
-  $('#your-tuition').html(tuitionByYearDict[userYear][0]);
-  $('#parents-tuition').html(tuitionByYearDict[userYear - 25][0]);
-  $('#gparents-tuition').html(tuitionByYearDict[userYear - 50][0]);
-} else{
-    console.log("else");
-    $('#your-tuition').html(tuitionByYearDict[userYear][1]);
-    $('#parents-tuition').html(tuitionByYearDict[userYear - 25][1]);
-    $('#gparents-tuition').html(tuitionByYearDict[userYear - 50][1]);
-
-
+if (userYear == undefined || userYear == "" || userYear <= 1979){
+  console.log(userYear);
+  alert("Please enter a valid year between 1980 and 2016.");
+}else{
+  if (tempBtn == true){
+    $('#your-tuition').html(tuitionByYearDict[userYear][0]);
+    $('#parents-tuition').html(tuitionByYearDict[userYear - 25][0]);
+    $('#gparents-tuition').html(tuitionByYearDict[userYear - 50][0]);
+  } else{
+      $('#your-tuition').html(tuitionByYearDict[userYear][1]);
+      $('#parents-tuition').html(tuitionByYearDict[userYear - 25][1]);
+      $('#gparents-tuition').html(tuitionByYearDict[userYear - 50][1]);
+  }
 }
 
 }
+
+
 
 // End Tuition Finder functions
 $(document).ready(function() {
   loadBarData();
   loadEnrollmentLineData();
   loadRevLineData();
-} );
+});
+
+$('.submit_on_enter').keydown(function(event) {
+  // enter has keyCode = 13, change it if you want to use another button
+  if (event.keyCode == 13) {
+    loadData();
+    return false;
+  }
+});
